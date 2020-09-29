@@ -196,7 +196,7 @@ stages:
       displayName: Create Or Update Resource Group
       enabled: 'true'
       inputs:
-        azureSubscription: 'Visual Studio Enterprise'
+        azureSubscription: '1ffe94a0-0c48-4623-b3c1-d88518fb2f48'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(ResourceGroupName)'
         location: 'West Europe'
@@ -208,7 +208,7 @@ stages:
 
     - task: AzSKSVTs@4
       inputs:
-        ConnectedServiceNameARM: 'Visual Studio Enterprise'
+        ConnectedServiceNameARM: '1ffe94a0-0c48-4623-b3c1-d88518fb2f48'
         GenerateMethodParameterSetSelection: 'ResourceGroupName'
         ResourceGroupName: '$(ResourceGroupName)'
         SubscriptionId: '17b12858-3960-4e6f-a663-a06fdae23428'
@@ -232,7 +232,7 @@ stages:
       displayName: Deploy Web App to Azure App Service
       enabled: 'true'
       inputs:
-        azureSubscription: 'Visual Studio Enterprise'
+        azureSubscription: '1ffe94a0-0c48-4623-b3c1-d88518fb2f48'
         appType: 'webApp'
         WebAppName: '$(WebAppName)'
         TakeAppOfflineFlag: true
@@ -253,7 +253,7 @@ stages:
     - task: SqlAzureDacpacDeployment@1
       displayName: Azure SQL Publish DacPac to SQL Azure
       inputs:
-        azureSubscription: 'Visual Studio Enterprise'
+        azureSubscription: '1ffe94a0-0c48-4623-b3c1-d88518fb2f48'
         ServerName: '$(SqlServerName).database.windows.net,1433'
         DatabaseName: '$(Database.Name)'
         SqlUsername: '$(Database.Admin)'
