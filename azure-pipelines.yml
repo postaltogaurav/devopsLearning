@@ -177,7 +177,7 @@ stages:
       displayName: Validate ARM template
       enabled: 'true'
       inputs:
-        azureSubscription: 'Visual Studio Enterprise'
+        azureSubscription: '1ffe94a0-0c48-4623-b3c1-d88518fb2f48'
         action: 'Create Or Update Resource Group'
         resourceGroupName: '$(ResourceGroupName)'
         location: 'West Europe'
