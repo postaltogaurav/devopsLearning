@@ -60,8 +60,8 @@ stages:
       displayName: Prepare analysis on SonarCloud
       inputs:
         SonarCloud: SonarCloud
-        organization: houssemdellai
-        projectKey: WebAppWithDatabaseDemo
+        organization: bsldemo
+        projectKey: bsldemo
 
     - task: DotNetCoreCLI@2
       displayName: Build
